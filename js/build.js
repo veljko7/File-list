@@ -41,6 +41,7 @@ Fliplet.Widget.instance({
                 return Fliplet.Media.getIdFromRemoteUrl(url);
               });
 
+              // TODO check how to escape this call
               return Fliplet.Media.Files.getAll({
                 files: fileIDs,
                 fields: ['name', 'url', 'metadata', 'createdAt']
