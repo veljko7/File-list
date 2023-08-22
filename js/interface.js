@@ -18,9 +18,9 @@ Fliplet.DataSources.get({ appId: Fliplet.Env.get('masterAppId'), attributes: ['i
             Fliplet.DataSources.getById(value, {
               attributes: ['columns']
             }).then(function (columns) {
-              $(document).find('#columnName').html('')
+              $('#columnName').html('')
               columns.columns.forEach(el => {
-                $(document).find('#columnName').append(`<option value="${el}">${el}</option>`)
+                $('#columnName').append(`<option value="${el}">${el}</option>`)
               })
             });
           }
@@ -31,9 +31,9 @@ Fliplet.DataSources.get({ appId: Fliplet.Env.get('masterAppId'), attributes: ['i
             Fliplet.DataSources.getById(value, {
               attributes: ['columns']
             }).then(function (columns) {
-              $(document).find('#columnName').html('')
+              $('#columnName').html('')
               columns.columns.forEach(el => {
-                $(document).find('#columnName').append(`<option value="${el}">${el}</option>`)
+                $('#columnName').append(`<option value="${el}">${el}</option>`)
               })
             });
           }
