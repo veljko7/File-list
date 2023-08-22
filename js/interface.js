@@ -1,6 +1,6 @@
 var appDataSources = [];
-Fliplet.DataSources.get({ appId: Fliplet.Env.get('masterAppId'), attributes: ['id', 'name'] }).then(function (DSs) {
-  appDataSources = DSs.map(el => {
+Fliplet.DataSources.get({ appId: Fliplet.Env.get('masterAppId'), attributes: ['id', 'name'] }).then(function (dataSources) {
+  appDataSources = dataSources.map(el => {
     return { value: el.id, label: el.name };
   });
   Fliplet.Widget.generateInterface({
